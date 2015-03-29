@@ -31,8 +31,9 @@
 	    	</div>
 	    	<!-- Navigation panel -->
 	    	<nav id="nav">
-			    <ul>
-    				<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <ul>
+                    <li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li> 
+    			<!--	<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li> -->
 					<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
 					<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 					<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
@@ -66,7 +67,7 @@
     				<div class="4u">
 		    			<article class="item">
 							<a href="dynamic_proj/index.php" class="image fit"><img src="images/picdb.jpg" alt="" /></a>
-							<header><h3>Dynamic Website</h3></header>
+							<header><h3>Dynamic Website Design Sample</h3></header>
 				    	</article>
 			    	</div>
                </div>
@@ -80,12 +81,25 @@
 				<p>I'm a programmer studying Computational Physics and Computer Science at the University of Michigan. I will graduate in May 2015 and am seeking opportunities in science visualization and backend development.</p>
         	</div>
 		</section>	
-		<!-- Contact -->
+        <!-- Contact -->
+<?php
+function mail_utf8($to, $from_user, $from_email, $subject = '(No subject)', $message = '')
+   { 
+      $from_user = "=?UTF-8?B?".base64_encode($from_user)."?=";
+      $subject = "=?UTF-8?B?".base64_encode($subject)."?=";
+
+      $headers = "From: $from_user <$from_email>\r\n". 
+               "MIME-Version: 1.0" . "\r\n" . 
+               "Content-type: text/html; charset=UTF-8" . "\r\n"; 
+
+     return mail($to, $subject, $message, $headers); 
+   }
+?>
 		<section id="contact" class="four">
 		    <div class="container">
 			    <header><h2>Contact</h2></header>
                 <p></p>
-				<form method="post" action="#">
+				<form method="post" action="send_form_email.php">
 				    <div class="row 50%">
 						<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
 						<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
