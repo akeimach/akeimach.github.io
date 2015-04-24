@@ -1,127 +1,482 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
 <head>
-    <title>Alyssa Keimach | Home</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.scrolly.min.js"></script>
-	<script src="js/jquery.scrollzer.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-wide.css" />
-	</noscript>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Danny Maruyama | Home</title>
 
+<!-- Meta Tag for responsive -->
+<meta name=”viewport” content=”width=1024, minimal-ui”>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<!-- This tells the page to watch for special styling for IE9 -->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+<!-- Loading stylesheet for the design -->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery.fs.wallpaper.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- Finally we will load the font from Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+</head>
 <body>
 
-	<!-- Header -->
-	<div id="header" class="skel-layers-fixed">
-		<div class="top">
-		    <!-- Logo -->
-	    	<div id="logo">
-		    	<span class="image avatar48"><img src="images/prof2.jpg" alt="" /></span>   
-                <h1 id="title">Alyssa Keimach</h1>
-		    	<!--<p> subtitle </p>-->
-	    	</div>
-	    	<!-- Navigation panel -->
-	    	<nav id="nav">
-                <ul>
-                    <li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li> 
-    			<!--	<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li> -->
-					<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-					<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-					<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-				</ul>
-			</nav>		
-		</div>
-    	<div class="bottom">
-			<!-- Social Icons -->
-			<ul class="icons">
-				<li><a href="https://github.com/akeimach" class="icon fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://linkedin.com/in/akeimach" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			</ul>
-		</div>
-	</div>
 
-	<!-- Main -->
-	<div id="main">
-	    <!-- Intro -->
-		<section id="top" class="one dark cover">
-	    	<div class="container">
-			   <!-- <header><h2 class="alt">I'm <strong>Alyssa Keimach</strong>.</header>	-->			
-				<footer><a href="#portfolio" class="button scrolly">View Portfolio</a></footer>
-			</div>
-		</section>
-		<!-- Portfolio -->
+<body id="top">
 
-	<section id="portfolio" class="two">
-		    <div class="container">		
-			    <header><h2>Portfolio</h2></header>
-			    <!--<p> subtitle </p>-->
-                <div class="row">
-    				<div class="4u">
-		    			<article class="item">
-							<a href="http://keimach-articles.elasticbeanstalk.com/" class="image fit"><img src="images/picdb.jpg" alt="" /></a>
-							<header><h3>Dynamic Website Design Sample</h3></header>
-				    	</article>		
-                    </div>
-                    <div class="4u">
-                		<article class="item">
-                            <a
-                                href="resume.html"
-                            class="image fit"><img src="images/picresume.jpg" alt="" /></a>
-                        	<header><h3>Resume</h3></header>
-                        </article>    
-                    </div>
-                </div>
-            </div>
-		</section>	
-
-
-		<!-- About Me -->
-		<section id="about" class="three">
-		    <div class="container">
-				<header><h2>About Me</h2></header>
-                <a href="#" class="image featured"><img src="images/yosemiteprof.jpg" alt="" /></a>
-				<p>I'm a programmer studying Computational Physics and Computer Science at the University of Michigan. My background includes Astronomy research, public speaking, and experience developing in C++ and Python. I'm currently using SQL and Java for database programming, specifically with Oracle and mySQL. Seeking full-time opportunities in web development beginning fall 2015.</p>
-        	</div>
-		</section>	
-        <!-- Contact -->
-		<section id="contact" class="four">
-		    <div class="container">
-			    <header><h2>Contact</h2></header>
-                <p></p>
-				  <form method="POST" action="http://formspree.io/alyssakeimach@gmail.com">
-                      <input type="hidden" name="_next" value="http://akeimach.github.io/thanks.html" />
-                      <input type="hidden" name="_cc" value="akeimach@umich.edu" />
-				    <div class="row 50%">
-						<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-						<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
-					</div>
-					<div class="row 50%">
-						<div class="12u">
-							<textarea name="message" placeholder="Message"></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<div class="12u">
-						    <input type="submit" value="Send Message" />
-						</div>
-					</div>
-				</form>
-            </div>
-		</section>	
-	</div>
+<!-- Start of Social Section at bottom of page --> 
+<div id="socialsection">
+ 
+    <div id="social-button"></div>
     
-    <!-- Footer -->
-	<div id="footer">
-	</div>
+    <!--  -->
+    <div id="social-right">
+        	<ul class="icons">
+				<li><a href="https://www.linkedin.com/pub/daniel-maruyama/5/583/99a" class="icon
+                    fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://www.facebook.com/profile.php?id=1226617"
+                    class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+       
+    </div>
+    
+</div>
+<!-- End of Social Section at bottom of page -->     
+    
+        
+
+<!-- HEADER SECTION -->
+<header>
+
+    <!-- Start of Header Container - the content div that is a set width and centralized -->
+    <div class="header-container">
+        
+        <div id="menu" class="menu">
+            <div id="nav" class="nav">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Interests">Interests</a></li>
+                    <li><a href="#CV">Curriculum Vitae</a></li>
+               
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div id="menu-button"></div> 
+        </div>        
+
+    </div><!-- End of Header Container 
+    <h2>Danny's Portfolio-in-progress</h2> -->
+
+</header>
+
 
 </body>
 </html>
+
+
+    
+    
+<!-- TOP SECTION -->
+
+<!-- Start of Video Element -->
+<div id="video_element">
+
+    <!-- Start of Main Title + Intro -->
+    <div class="huge-title">
+
+        <!--img src="img/headshot.jpg" alt="Jonathan Atkinson" class="headshot
+            wow tada" data-wow-delay="3s" data-wow-offset="80"
+            data-wow-duration="1s"-->
+        <h1 class="wow bounceInDown" data-wow-offset="80"
+            data-wow-duration="3s">Danny Maruyama</h1>
+
+        <!-- Start of Owl Testimonial Carousel -->
+        <div class="testimonials owl-carousel">
+
+            <div><!-- Start of Slide 1 -->
+                <div class="button-box"><h4>Science and shit</h4></div>
+            </div>
+
+            <div><!-- Start of Slide 2 -->
+                <div class="button-box"><h4>Neurons?</h4></div>
+            </div>
+
+            <div><!-- Start of Slide 3 -->
+                <div class="button-box"><h4>I like basketball</h4></div>
+            </div>
+
+        </div><!-- End of Owl Testimonial Carousel -->
+
+    </div><!-- End of Main Title + Intro -->
+
+    <!-- Start of Scroll Down Message and animation -->
+    <div id="godown" class="floating">
+
+        <p><a href="#About" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                            More About Danny
+                        </a></p>
+
+       <!-- <p><a href="#About">More about Danny</a></p>
+        <img src="" alt="down"/> -->
+
+    </div><!-- End of Scroll Down Message and animation -->
+
+    <!-- Start of Shade - this is the css based gradient over the image for that cool effect -->
+    <div class="shade"></div><!-- End of Shade -->
+
+</div><!-- End of Video Element -->
+
+
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+
+    <!-- Start of Container -->
+    <div class="container">
+         
+        <!-- AT A GLANCE SECTION -->
+            
+        <!-- Start of Content - where the content be -->
+        <div class="content2">
+        
+            <!-- Start of Hero - The main top image like a phone etc -->
+            <div class="hero">
+                
+                <!--
+                <h3>At a glance</h3>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
+                        <h4>FULL NAME</h4>
+                            <h5>Bruce "the bat" Wayne</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4>BIRTHPLACE</h4>
+                            <h5>Lancashire, England</h5>
+                </div>
+                
+                <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h4>BORN</h4>
+                            <h5>1970</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
+                        <h4>RESIDENCE</h4>
+                            <h5>Mechanicsburg, OH</h5>
+                </div>
+                
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4>EDUCATION</h4>
+                            <h5>BS, MS, MBA</h5>
+                </div>
+                
+                <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h4>HOBBIES</h4>
+                            <h5>Television, Movies, Art</h5>
+                </div>
+                -->
+            </div><!-- End of Hero -->
+            
+        </div><!-- End of Content -->
+        
+        
+        
+        <!-- ABOUT SECTION -->    
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+            
+            <!-- Start of Content -->
+            <div class="content" id="About">
+                    
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">About</h2>
+                <p>I am a physics graduate in the Zochowski lab at the Univeristy of Michigan.  My research primarily focuses on measuring the functional relationships between neurons and studying how these functional networks evolve in time.  The goal of my research is to understand the how changes in functional connectivity achieves underlying neuronal function.</p>
+
+             <!--   <blockquote class="wow fadeInLeftBig" data-wow-offset="80"
+                    data-wow-duration="3s"><p>My goals are:</p></blockquote>
+-->
+                <!--img src="img/signature.png" width="250" alt="John
+                    Hancock"-->
+            
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
+        
+        
+        
+        <!-- SKILLS SECTION -->
+        
+        <!-- Start of Parallax 1 Container -->
+        <div class="parallax1">
+
+            <!-- Start of Content -->
+            <div class="content" id="Interests">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80"
+                    data-wow-duration="2s">Interests</h2>
+
+                <!-- Start of One Half Column Container -->
+                <div class="half_column1 wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <p>My interests in include network-level encoding, cortex algorithms, the bio-physical mechanisms of neuronal algorithms, and golf... golf is great!  Recently I've been looking for systems neuroscience insight from machine learning and information theory.</p>
+                    <div class="button-box"><a href="#" class="button">Links to
+                    Work</a></div>
+
+                </div><!-- End of One Half Column Container -->
+
+                <!-- Start of One Half Column Last Container -->
+                <div class="half_column2 wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <!-- Start of 3 rows -->
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%"
+                        data-fgColor="#ffffff" data-skin="cr3ativ"
+                        data-thickness=".2" value="90" data-readOnly="true" >
+                        <h3>MATLAB</h3>
+                    </div>
+
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%"
+                        data-fgColor="#ffffff" data-skin="cr3ativ"
+                        data-thickness=".2" value="50" data-readOnly="true">
+                        <h3>C++</h3>
+                    </div>
+
+                    <div class="one_third_last centered skill">
+                        <input class="knob" data-width="100%"
+                        data-fgColor="#ffffff" data-skin="cr3ativ"
+                        data-thickness=".2" value="50" data-readOnly="true">
+                        <h3>Python</h3>
+                    </div>
+                    <!-- End of 3 rows -->
+
+
+                    <!-- Start of 2nd 3 rows 
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true">
+                        <h3>R</h3>
+                    </div>
+                    -->
+                    <div class="one_third centered skill">
+                        <input class="knob" data-width="100%"
+                        data-fgColor="#ffffff" data-skin="cr3ativ"
+                        data-thickness=".2" value="95" data-readOnly="true">
+                        <h3>Golf</h3>
+                    </div>
+                <!--
+                    
+                    <div class="one_third_last centered skill">
+                        <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="60" data-readOnly="true">
+                        <h3>Excel</h3>
+                    </div>
+                     End of 2nd 3 rows -->
+
+                </div><!-- End of One Half Column Last Container -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Parallax 1 Container -->
+        
+
+        
+        <!-- CV / RESUME SECTION -->
+        
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+        
+            <!-- Start of Content -->
+            <div class="content" id="CV">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">curriculum vitae</h2>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third clearfix wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Education</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Science</h3>
+                    <h5>University Of Michigan</h5>
+                    <p class="small">6 Years</p>
+                    <div class="date">September 2009 - June 2015</div>
+                    <p>PhD candidate in brains</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Math</h3>
+                    <h5>University Of California, Berkeley</h5>
+                    <p class="small">4 Years</p>
+                    <!--
+                    <div class="date">June 2008 - May 2010</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                </div>
+                -->
+                <!-- End of 2/3 Column Last -->
+
+                <div class="bigspace"></div>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Work Experience</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last 
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Front End Developer</h3>
+                    <h5>XYZ Company, Utah</h5>
+                    <p class="small">6 Months</p>
+                    <div class="date">June 2013 - Present</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                </div> End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last 
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Internship</h3>
+                    <h5>Company ABC</h5>
+                    <p class="small">1 Year</p>
+                    <div class="date">May 2012 - May 2013</div>
+                    <p>Titles are appropriately sized and are darker giving a good visual hierachy to your page and content. With the light background and not-quite-so-dark font color it's also easy on the eyes for reading making your copy pop, and your message stand-out.</p>
+                    <a href="#" class="button-reverse">Download My CV</a><a href="#" class="button">LinkedIn Profile</a>
+                </div> End of 2/3 Column Last -->
+
+            </div><!-- End of Content -->
+            
+        </div><!-- End of White Container -->
+        
+
+                    
+        <!-- PORTFOLIO SECTION -->
+
+
+          <!-- Start of Parallax 1 Container -->
+        <div class="parallax1">
+
+            <!-- Start of Content -->
+            <div class="content" id="Portfolio">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80"
+                    data-wow-duration="2s">Portfolio</h2>
+
+                <!-- Start of One Half Column Container -->
+                <div class="half_column1 wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <p>MATLAB to study neural networks</p>
+                    <div class="button-box"><a href="#" class="button">Links to
+                    Work</a></div>
+
+                </div><!-- End of One Half Column Container -->
+
+                <!-- Start of One Half Column Last Container 
+                         <div class="half_column2 wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+
+                                          </div>
+                     End of 2nd 3 rows -->
+
+                <!-- End of One Half Column Last Container -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Parallax 1 Container -->
+        
+        
+        
+        <!-- CONTACT FORM SECTION -->
+
+        <!-- Start of Grey Container -->
+        <div class="greycontainer" id="Contact">
+
+            <!-- Start of Content -->
+            <div class="content centered" id="Contact">
+
+                <h2>Contact</h2>
+                <p></p>
+
+                <!-- Begin Contact Form -
+                <form action="mailer.php" id="contact_form" method="post" class="wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+-->
+                    <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" value="" class="requiredField name" />
+                    </p>
+
+                    <p>
+                    <label>Email Address</label>				
+                    <input type="text" name="email" id="email" value=""  class="requiredField email" /> 
+                    </p>
+
+                    <p>
+                    <label>Your Message</label>
+                    <textarea name="message" id="message" rows="8" cols="30" class="requiredField message"></textarea>
+                    </p>
+
+                    <p><input name="submitted" id="submitted" value="Submit" class="submit" type="submit" /></p>
+
+               <!-- </form>  -End Contact Form -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Grey Container -->
+        
+
+      
+        <!-- FOOTER SECTION -->
+
+        <!-- Start Of Footer -->    
+         <footer>
+
+            <!-- Start of Content -->
+            <div class="content">
+
+                <!--
+                <a href="mailto: jane@doe.com">Jane@doe.com</a></p>
+
+                <p class="copyright">Copyright 2014 - Jonathan Atkinson</p>
+
+                -->
+            </div><!-- End of Content -->
+
+        </footer><!-- End Of Footer -->
+        
+	</div><!-- End of Container -->
+    
+</div><!-- End of Wrapper -->
+
+<!--Loading Scripts -->
+<!-- First we will load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<!--Load Fallback if google not avalible-->
+<script>
+if (!window.jQuery) {
+    document.write('<script src="js/jquery-1.11.0.min.js"><\/script>');
+}
+</script>    
+<!-- Now we load the JS files for the fancy things on the page -->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/retina.js"></script>
+<script type="text/javascript" src="js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="js/jquery.fs.wallpaper.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.plusanchor.js"></script>
+<script type="text/javascript" src="js/jquery.knob.js"></script>
+<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
