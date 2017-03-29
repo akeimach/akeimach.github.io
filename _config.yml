@@ -4,6 +4,5 @@ url: "http://akeimach.github.io/" # the base hostname & protocol for your site
 exclude:
   - "README.md"
   - "CHANGELOG.md"
-  - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
