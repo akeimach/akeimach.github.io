@@ -44,10 +44,12 @@
   <div>
     <div class="w-container">
       <div class="form w-form">
-        <form data-name="Email Form" id="email-form" name="email-form" method="POST" action="http://formspree.io/alyssakeimach@gmail.com">
+        <form data-name="Email Form" id="email-form" name="email-form" action="http://formspree.io/alyssakeimach@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="thanks.html">
+          <input type="hidden" name="_subject" value="Email submission from alyssakeimach.com">
           <label class="field" for="name">Name</label>
           <input class="input w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text">
-          <label class="field" for="email">Email Address</label>
+          <label class="field" for="email">Email</label>
           <input class="input w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email">
           <label class="field" for="field">Message</label>
           <textarea class="input text-area w-input" id="field" maxlength="5000" name="message" placeholder="Example Text"></textarea>
