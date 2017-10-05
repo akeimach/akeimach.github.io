@@ -3,74 +3,99 @@ body {
     background-image: url("../images/eight_horns.png");
 }
 
-header {
-    position: relative;
-    overflow: hidden;
+header, footer, section {
+    overflow: auto;
     width: 100%;
-    height: 90px;
     padding: 0px;
-    background: #ffffff; /* white */
     border-style: solid;
-    border-bottom-color: #cccccc; /* lighter grey */
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    height: 90px;
+    background: #ffffff; /* white */
+    border-bottom-color: #cccccc; /* lightest grey */
     border-bottom-width: 2px;
 }
 
 footer {
     position: fixed;
-    overflow: hidden;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    padding: 0px;
+    bottom: 0px;
+    height: 90px;
     background: #666666; /* dark grey */
-    border-style: solid;
     border-top-color: #4aaaa5;
     border-top-width: 6px;
 }
 
 section {
+    position: relative;
     float: left;
-    overflow: hidden;
-    padding: 0px;
-    margin-top: 30px;
+    z-index: -1;
+    margin-top: 140px;
     margin-bottom: 140px;
-    background: #ffffff; /* white */
-    border-style: solid;
+    background: #ffffff;
     border-color: #dddddd; /* light grey */
     border-width: 1px;
-}
-
-h1 {
-    font-family: 'Georgia',Times,Times New Roman,serif;
-    font-size: 28px;
-    font-weight: bold;
-    height: 40px;
-    padding: 20px;
-    color: #4aaaa5;
-}
-
-h2 {
-    font-family: 'Georgia',Times,Times New Roman,serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-    color: #4aaaa5; /* teal */
-    text-align: center;
-}
-
-.invert-colors {
-    background: #4aaaa5; /* teal */
-    color: #ffffff; /* white font */
 }
 
 p, a {
     font-family: 'Arial','Helvetica Neue',Helvetica,sans-serif;
     font-size: 18px;
     padding: 20px;
-    color: #777777; /* grey */
+    color: #777777; /* medium grey */
     text-decoration: none;
 }
 
+h1, h2 {
+    font-family: 'Georgia',Times,Times New Roman,serif;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+h1 {
+    font-size: 28px;
+    height: 40px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.invert-colors {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+h1:hover, h2:hover {
+    background: #4aaaa5; /* teal */
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.invert-colors:hover {
+    background: #ffffff;
+    color: #4aaaa5;
+    transition: 0.4s;
+}
+
+/* Spacing for main body area */
+.content-main {
+    position: absolute; /* remain stationary during window resize */
+    width: 650px;
+    margin-left: 155px;
+}
+
+.content-connect {
+    position: absolute;
+    width: 270px;
+    margin-left: 820px;
+}
+
+/* Header and navigation bar */
 .navigation-bar h1 {
     float: left;
     padding-top: 30px;
@@ -81,55 +106,21 @@ p, a {
 .navigation-bar li {
     float: left;
     margin-top: 40px;
-    border-right: solid 2px #dddddd; /* light grey */
+    border-right: solid 2px #dddddd;
 }
 
-.navigation-bar li:last-child { border: 0px; }
-
+.navigation-bar li:last-child {
+    border: 0px;
+}
 
 .footer-text {
     font-size: 14px;
-    padding-top: 40px;
+    padding-top: 35px;
     margin-left: 500px;
     color: #eeeeee;    
 }
 
-.content-connect {
-    width: 270px;
-    margin-left: 15px;
-}
-
-.content-main {
-    width: 650px;
-    margin-left: 155px;
-}
-
-.image-align {
-    float: left;
-    padding: 20px;
-}
-
-.contact-box {
-    width: 600px;
-    height: 20px;
-    margin-left: 20px;
-    color: #777777;
-}
-
-#message-box {
-    height: 200px;
-    border-color: #dddddd;
-}
-
-#submit-box {
-    height: 30px;
-    width: 70px;
-    margin: 20px;
-    background: #4aaaa5;
-    color: #ffffff; /* white font */
-}
-
-.line-big, .line-small {
+.line {
     width: 600px;
     height: 2px;
     margin-left: 20px;
@@ -141,21 +132,48 @@ p, a {
     width: 230px;
 }
 
+/* Formatting for boxes on the contact me page */
+.contact-box {
+    width: 600px;
+    height: 20px;
+    margin-left: 20px;
+    color: #777777;
+}
+
+.message-box {
+    height: 200px;
+    border-color: #dddddd;
+}
+
+.submit-box {
+    height: 30px;
+    width: 70px;
+    margin: 20px;
+    background: #4aaaa5;
+    color: #ffffff;
+    border: 0;
+    border-radius: 0px;
+}
+
+/* Image container for left floating images */
 .image-container {
     position: relative;
     float: left;
 }
 
 .image-container img {
-    height: 180px;
+    height: 200px;
     width: 240px;
     padding: 20px;
 }
 
 .image-container h2 {
     position: absolute;
-    top: 130px;
+    top: 140px;
     left: 20px;
-    width: 200px;
+    height: 10px;
+    width: 210px;
+    font-weight: normal;
 }
+
 
