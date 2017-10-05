@@ -5,6 +5,7 @@ body {
 
 header {
     position: relative;
+    overflow: hidden;
     width: 100%;
     height: 90px;
     padding: 0px;
@@ -16,6 +17,7 @@ header {
 
 footer {
     position: fixed;
+    overflow: hidden;
     bottom: 0;
     width: 100%;
     height: 100px;
@@ -28,6 +30,7 @@ footer {
 
 section {
     float: left;
+    overflow: hidden;
     padding: 0px;
     margin-top: 30px;
     margin-bottom: 140px;
@@ -41,11 +44,21 @@ h1, h2 {
     font-family: 'Georgia',Times,Times New Roman,serif;
     font-size: 28px;
     font-weight: bold;
+    height: 40px;
+    padding: 20px;
+    background: #4aaaa5; /* teal */
+    color: #ffffff; /* white font */
+}
+
+h3, h4 {
+    font-family: 'Georgia',Times,Times New Roman,serif;
+    font-size: 28px;
+    font-weight: bold;
     padding: 20px;
     color: #4aaaa5; /* teal */
 }
 
-h2 {
+h2, h4 {
     font-size: 20px;
 }
 
@@ -59,12 +72,9 @@ p, a {
 
 .navigation-bar h1 {
     float: left;
-    height: 40px;
     padding-top: 30px;
     margin-left: 155px;
     margin-right: 390px;
-    background: #4aaaa5; /* teal */
-    color: #ffffff; /* white font */
 }
 
 .navigation-bar li {
@@ -99,9 +109,10 @@ p, a {
 }
 
 .contact-box {
-    width: 90%;
+    width: 600px;
     height: 20px;
     margin-left: 20px;
+    color: #777777;
 }
 
 #message-box {
@@ -117,5 +128,35 @@ p, a {
     color: #ffffff; /* white font */
 }
 
+.line-big, .line-small {
+    width: 600px;
+    height: 2px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background: #dddddd;
+}
 
+.line-small {
+    width: 230px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    position: relative;
+    float: left;
+    height: 180px;
+    width: 240px;
+    padding: 20px;
+}
+
+.image-container h2 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    height: 2px;
+    width: 200px;
+}
 
