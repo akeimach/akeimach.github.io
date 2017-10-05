@@ -40,26 +40,27 @@ section {
     border-width: 1px;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Georgia',Times,Times New Roman,serif;
     font-size: 28px;
     font-weight: bold;
     height: 40px;
     padding: 20px;
-    background: #4aaaa5; /* teal */
-    color: #ffffff; /* white font */
+    color: #4aaaa5;
 }
 
-h3, h4 {
+h2 {
     font-family: 'Georgia',Times,Times New Roman,serif;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     padding: 20px;
     color: #4aaaa5; /* teal */
+    text-align: center;
 }
 
-h2, h4 {
-    font-size: 20px;
+.invert-colors {
+    background: #4aaaa5; /* teal */
+    color: #ffffff; /* white font */
 }
 
 p, a {
@@ -142,11 +143,10 @@ p, a {
 
 .image-container {
     position: relative;
+    float: left;
 }
 
 .image-container img {
-    position: relative;
-    float: left;
     height: 180px;
     width: 240px;
     padding: 20px;
@@ -154,9 +154,8 @@ p, a {
 
 .image-container h2 {
     position: absolute;
-    top: 50px;
+    top: 130px;
     left: 20px;
-    height: 2px;
     width: 200px;
 }
 
