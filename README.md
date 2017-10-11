@@ -1,2 +1,2 @@
-# Basic-Portfolio
-Building a basic portfolio
+# Responsive-Portfolio
+personal website, responsive edition
