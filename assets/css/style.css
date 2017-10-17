@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /*outline: 1px solid red;*/
 }
 
 .row::after {
@@ -158,7 +157,12 @@ h1:hover, h2:hover {
 
 .image-container img {
     width: 100%;
-    height: 100%
+    height: 100%;
+}
+
+.image-container a {
+    padding: 0px;
+    line-height: 100%;
 }
 
 .image-container h2 {
