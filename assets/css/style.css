@@ -31,7 +31,7 @@ body {
 header {
     background: #ffffff; /* white */
     border-style: solid;
-    border-bottom-color: #cccccc; /* lightest grey */
+    border-bottom-color: #cccccc; /* light grey */
     border-bottom-width: 2px;
     text-align: center;
 }
@@ -39,7 +39,7 @@ header {
 footer {
     background: #666666; /* dark grey */
     border-style: solid;
-    border-top-color: #4aaaa5;
+    border-top-color: #0C5858;
     border-top-width: 6px;
 }
 
@@ -48,7 +48,7 @@ section {
     padding: 20px;
     background: #ffffff;
     border-style: solid;
-    border-color: #dddddd; /* light grey */
+    border-color: #dddddd; /* lighter grey */
     border-width: 1px;
 }
 
@@ -64,9 +64,9 @@ nav li {
 }
 
 .nav-bar-formatting {
-    background: #ffffff; /* white */
+    background: #ffffff;
     border-style: solid;
-    border-bottom-color: #cccccc; /* lightest grey */
+    border-bottom-color: #cccccc;
     border-bottom-width: 2px;
 }
 
@@ -83,7 +83,7 @@ nav li {
 }
 
 nav a:hover {
-    color: #4aaaa5;
+    color: #0C5858;
     transition: 0.4s;
 }
 
@@ -106,7 +106,7 @@ p, a {
 h1, h2 {
     font-family: 'Georgia',Times,Times New Roman,serif;
     font-weight: bold;
-    color: #4aaaa5;
+    color: #0C5858;
     padding: 10px;
 }
 
@@ -119,19 +119,19 @@ h2 {
 }
 
 .invert-colors {
-    background: #4aaaa5;
+    background: #0C5858;
     color: #ffffff;
 }
 
 h1:hover, h2:hover {
-    background: #4aaaa5; /* teal */
+    background: #0C5858; /* dark green */
     color: #ffffff;
     transition: 0.4s;
 }
 
 .invert-colors:hover {
     background: #ffffff;
-    color: #4aaaa5;
+    color: #0C5858;
     transition: 0.4s;
 }
 
@@ -139,7 +139,7 @@ h1:hover, h2:hover {
     padding: 20px;
     font-size: 14px;
     text-align: center;
-    color: #eeeeee;    
+    color: #eeeeee; /* lightest grey */
 }
 
 /* Image container for left floating images */
@@ -173,6 +173,10 @@ h1:hover, h2:hover {
     font-weight: normal;
 }
 
+.image-size-format {
+    max-height: 170px;
+}
+
 /* Formatting for boxes on the contact me page */
 .contact-box {
     width: 96%;
@@ -190,7 +194,7 @@ h1:hover, h2:hover {
     height: 40px;
     width: 70px;
     margin-top: 15px;
-    background: #4aaaa5;
+    background: #0C5858;
     color: #ffffff;
     border: 0;
     border-radius: 0px;
