@@ -34,18 +34,25 @@
 }
 
 p, a {
-    font-family: 'Arial','Helvetica Neue',Helvetica,sans-serif;
+    font-family: 'Times',serif;
     font-size: 18px;
     line-height: 150%;
-    color: #777777; 
-    /*padding: 10px;*/
+    color: #7d7d7d;
     text-decoration: none;
 }
 
-.text-about {
+.text-about, a {
     text-align: right;
     font-size: 30px;
     cursor: pointer;
+    text-decoration: none;
+    color: #7d7d7d;
+    transition: 0.5s ease-in-out;
+}
+
+.text-about:hover, a:hover {
+    cursor: pointer;
+    color: #b3b3b3;
     text-decoration: none;
 }
 
@@ -53,12 +60,12 @@ p, a {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-y: auto;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
 .overlay-content {
@@ -67,13 +74,36 @@ p, a {
     width: 100%;
 }
 
-.overlay a {
-    display: block;
-    transition: 0.3s;
+.carousel-indicators {
+    z-index: 1;
 }
 
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+.square-link {
+    width: 50%;
+    height: 20%;
+    background: rgba(69, 69, 69, 0.7);
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.transparent-font {
+    background-color: #fff;
+    overflow: hidden;
+    display: inline-block; 
+    font-weight: bold;
+    color: transparent;
+    font-size: 80px;
+
+}
+span { 
+    background: url("../images/bee_1.jpg") -99% -23% ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
 }
 
 @media only screen and (min-width: 640px) {
