@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particles'), {
+    lineColor: '#0d4f48',
+    dotColor: '#299c90'
+  });
+  var intro = document.getElementById('intro');
+  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+}, false);
 
 $(document.body).ready(function() {
 
@@ -12,3 +20,5 @@ $(document.body).ready(function() {
         document.getElementById("toggle-about").style.height = "0%";
     });
 });
+
+
