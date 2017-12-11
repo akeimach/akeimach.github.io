@@ -3,21 +3,22 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*outline: solid red 1px;*/
+  outline: solid red 1px;
 }
 
 
 html,
 body {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 150%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
   background: #1c0405;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: #7d7d7d;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -30,28 +31,25 @@ a {
 }
 
 .row {
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
-  margin-right:-15px;
-  margin-left:-15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0px;
 }
 
 .row::after {
+  width: 100%;
   content: "";
   clear: both;
   display: table;
-  padding: 0px;
+  margin: 0px;
 }
 
 [class*="width-"] {
   float: left;
   width: 100%;
-  padding: 0px;
 }
-
-
 
 
 /* particle background */
@@ -75,10 +73,8 @@ a {
 .container-fill,
 .container-center {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0px;
+  padding: 0px;
 }
 
 .overlay {
@@ -99,10 +95,9 @@ a {
   width: 100%;
 }
 
-.text-about,
+.big-link,
 a {
   text-align: right;
-  padding: 0 20px;
   font-size: 30px;
   cursor: pointer;
   text-decoration: none;
@@ -110,7 +105,7 @@ a {
   transition: 0.5s ease-in-out;
 }
 
-.text-about:hover,
+.big-link:hover,
 a:hover {
   cursor: pointer;
   color: #b3b3b3;
@@ -122,6 +117,7 @@ a:hover {
 
 .container-center {
   position: absolute;
+  width: 100%;
 }
 
 .carousel-indicators {
@@ -149,10 +145,11 @@ a:hover {
 
 /* project scroll down */
 
-.project-details {
+.project-style {
   position: relative;
+  top: 900px;
+  z-index: 3;
 }
-
 
 @media only screen and (min-width: 640px) {
   .width-4 {
@@ -166,7 +163,6 @@ a:hover {
 @media only screen and (min-width: 768px) {
   .width-4 {    
     width: 33%;
-    margin-left: 15px;
   }
   .width-8 {
     width: 60%;

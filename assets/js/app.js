@@ -6,6 +6,8 @@ $(document.body).ready(function() {
     dotColor: '#299c90'
   });
 
+  $("#project-details").hide();
+
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 
@@ -15,6 +17,11 @@ $(document.body).ready(function() {
 
   $("#close-about").on("click", function(event) {
     document.getElementById("toggle-about").style.height = "0%";
+  });
+
+  $(".show-project").on("click", function(event) {
+    $("#project-details").toggle();
+    
   });
 
 });
