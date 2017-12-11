@@ -1,9 +1,9 @@
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-    /*outline: solid red 1px;*/
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*outline: solid red 1px;*/
 }
 
 
@@ -22,31 +22,31 @@ body {
 }
 
 p, a {
-    font-size: 18px;
-    color: #7d7d7d;
-    text-decoration: none;
+  font-size: 18px;
+  color: #7d7d7d;
+  text-decoration: none;
 }
 
 .row {
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    margin-right:-15px;
-    margin-left:-15px;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:-15px;
+  margin-left:-15px;
 }
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    padding: 0px;
+  content: "";
+  clear: both;
+  display: table;
+  padding: 0px;
 }
 
 [class*="width-"] {
-    float: left;
-    width: 100%;
-    padding: 0px;
+  float: left;
+  width: 100%;
+  padding: 0px;
 }
 
 
@@ -79,37 +79,37 @@ p, a {
 }
 
 .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-y: auto;
-    transition: 0.5s ease-in-out;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: auto;
+  transition: 0.5s ease-in-out;
 }
 
 .overlay-content {
-    position: relative;
-    top: 15%;
-    width: 100%;
+  position: relative;
+  top: 15%;
+  width: 100%;
 }
 
 .text-about, a {
-    text-align: right;
-    padding: 0 20px;
-    font-size: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #7d7d7d;
-    transition: 0.5s ease-in-out;
+  text-align: right;
+  padding: 0 20px;
+  font-size: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #7d7d7d;
+  transition: 0.5s ease-in-out;
 }
 
 .text-about:hover, a:hover {
-    cursor: pointer;
-    color: #b3b3b3;
-    text-decoration: none;
+  cursor: pointer;
+  color: #b3b3b3;
+  text-decoration: none;
 }
 
 
@@ -122,17 +122,17 @@ p, a {
 }
 
 .carousel-content {
-    width: 100px;
-    height: 200px;
-    background: black;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    text-align: center;
+  width: 100px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
 }
 
 .carousel-indicators {
-    z-index: 1;
+  z-index: 1;
 }
 
 .placeholder {
@@ -142,34 +142,34 @@ p, a {
 }
 
 .square-link {
-    width: 50%;
-    height: 30%;
-    background: rgba(69, 69, 69, 0.7);
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
+  width: 50%;
+  height: 30%;
+  background: rgba(69, 69, 69, 0.7);
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
 }
 
 
 @media only screen and (min-width: 640px) {
-    .width-4 {
-        width: 40%;
-    }
-    .width-8 {
-        width: 60%;
-    }
+  .width-4 {
+    width: 40%;
+  }
+  .width-8 {
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .width-4 {    
-        width: 33%;
-        margin-left: 15px;
-    }
-    .width-8 {
-        width: 60%;
-    }
+  .width-4 {    
+    width: 33%;
+    margin-left: 15px;
+  }
+  .width-8 {
+    width: 60%;
+  }
 }
 
