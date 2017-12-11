@@ -1,7 +1,4 @@
 
-
-/* particleground demo */
-
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -20,131 +17,14 @@ body {
   background: #1c0405;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  line-height: 1.3;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-#particles {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#intro {
-  position: absolute;
-  left: 0;
-  top: 20px;
-  /*padding: 0 20px;*/
-  width: 100%;
-  /*text-align: center;*/
-}
-/*h1 {
-  text-transform: uppercase;
-  font-size: 85px;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-}
-h1::after {
-  content: '';
-  width: 80px;
-  display: block;
-  background: #fff;
-  height: 10px;
-  margin: 30px auto;
-  line-height: 1.1;
-}
-p {
-  margin: 0 0 30px 0;
-  font-size: 24px;
-}
-.btn {
-  display: inline-block;
-  padding: 15px 30px;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.015em;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: all 0.4s;
-     -moz-transition: all 0.4s;
-       -o-transition: all 0.4s;
-          transition: all 0.4s;
-}
-.btn:hover {
-  color: #005544;
-  border-color: #005544;
-}
-
-@media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 70px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 48px;
-  }
-  h1::after {
-    height: 8px;
-  }
-}
-
-@media only screen and (max-width: 568px) {
-  #intro {
-    padding: 0 10px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  h1::after {
-    height: 6px;
-  }
-  p {
+p, a {
     font-size: 18px;
-  }
-  .btn {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 28px;
-  }
-  h1::after {
-    height: 4px;
-  }
-}
-
-*/
-
-.carousel-content {
-    width: 100px;
-    height: 200px;
-    background: black;
-    position: absolute;
-    /*bottom: -10%;*/
-    /*left: 50%;*/
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    text-align: center;
-}
-
-
-
-
-
-
-.container-fill {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    color: #7d7d7d;
+    text-decoration: none;
 }
 
 .row {
@@ -169,28 +49,33 @@ p {
     padding: 0px;
 }
 
-p, a {
-    font-family: 'Times',serif;
-    font-size: 18px;
-    line-height: 150%;
-    color: #7d7d7d;
-    text-decoration: none;
+
+
+
+/* particle background */
+
+.particle-style {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.text-about, a {
-    text-align: right;
-    padding: 0 20px;
-    font-size: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #7d7d7d;
-    transition: 0.5s ease-in-out;
+.intro-style {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
 }
 
-.text-about:hover, a:hover {
-    cursor: pointer;
-    color: #b3b3b3;
-    text-decoration: none;
+
+/* about me overlay */
+
+.container-fill {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .overlay {
@@ -211,37 +96,63 @@ p, a {
     width: 100%;
 }
 
+.text-about, a {
+    text-align: right;
+    padding: 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #7d7d7d;
+    transition: 0.5s ease-in-out;
+}
+
+.text-about:hover, a:hover {
+    cursor: pointer;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+
+/* carousel */
+
+.container-center {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.carousel-content {
+    width: 100px;
+    height: 200px;
+    background: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+}
+
 .carousel-indicators {
     z-index: 1;
 }
 
+.placeholder {
+  opacity: 0;
+  height: 400px;
+  width: 600px;
+}
+
 .square-link {
     width: 50%;
-    height: 20%;
+    height: 30%;
     background: rgba(69, 69, 69, 0.7);
     position: absolute;
-    bottom: -10%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 1;
     text-align: center;
 }
 
-.transparent-font {
-    background-color: #fff;
-    overflow: hidden;
-    display: inline-block; 
-    font-weight: bold;
-    color: transparent;
-    font-size: 80px;
-
-}
-span { 
-    background: url("../images/bee_1.jpg") -99% -23% ;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    display:block;
-}
 
 @media only screen and (min-width: 640px) {
     .width-4 {
