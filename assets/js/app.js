@@ -6,8 +6,6 @@ $(document.body).ready(function() {
     dotColor: '#299c90'
   });
 
-  $("#project-details").hide();
-
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 
@@ -19,9 +17,13 @@ $(document.body).ready(function() {
     document.getElementById("toggle-about").style.height = "0%";
   });
 
-  $(".show-project").on("click", function(event) {
-    $("#project-details").toggle();
-    
+  $("#open-project").on("click", function(event) {
+    document.getElementById("toggle-project").style.height = "100%";
+    document.getElementById("toggle-project").style.position = "relative";
+  });
+
+  $("#close-project").on("click", function(event) {
+    document.getElementById("toggle-project").style.height = "0%";
   });
 
 });
