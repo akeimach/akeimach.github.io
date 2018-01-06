@@ -1,2 +1,3 @@
-# Responsive-Portfolio
-personal website, responsive edition
+# React Portfolio
+
+Check it out!

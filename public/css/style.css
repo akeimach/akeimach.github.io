@@ -10,8 +10,9 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: auto;
+  margin: 0px;
 }
 
 body {
@@ -27,7 +28,8 @@ p {
   color: #7d7d7d;
 }
 
-a {
+a,
+.about-me-font {
   font-size: 30px;
   color: #7d7d7d;
   cursor: pointer;
@@ -35,18 +37,22 @@ a {
   transition: 0.5s ease-in-out;
 }
 
-a:hover {
+a:hover,
+.about-me-font:hover {
   color: #b3b3b3;
   cursor: pointer;
   text-decoration: none;
 }
 
 .align-left {
+  width: 50%;
   float: left;
 }
 
 .align-right {
+  width: 50%;
   float: right;
+  text-align: right;
 }
 
 .row {
@@ -55,6 +61,7 @@ a:hover {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0px;
+  width: 100%;
 }
 
 .row::after {
@@ -70,8 +77,20 @@ a:hover {
   width: 100%;
 }
 
+#root {
+  height: 100%;
+}
 
 /* about me overlay */
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  z-index: 10;
+}
 
 .overlay {
   height: 0%;
@@ -92,6 +111,9 @@ a:hover {
 
 .carousel-container {
   position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 0;
 }
 
 .project-container {
@@ -104,14 +126,16 @@ a:hover {
 .particle-style {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
 .intro-style {
-  position: absolute;
-  left: 0;
-  top: 20px;
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
@@ -119,6 +143,10 @@ a:hover {
 
 .carousel-indicators {
   z-index: 1;
+}
+
+.carousel-item {
+  height: 600px;
 }
 
 .placeholder {
@@ -139,13 +167,23 @@ a:hover {
   text-align: center;
 }
 
+.profile-img {
+  max-height: 230px;
+}
+
 
 @media only screen and (min-width: 640px) {
-  .width-4 {
-    width: 40%;
-  }
-  .width-8 {
-    width: 60%;
-  }
+  .width-1 { width: 8.33%; }
+  .width-2 { width: 16.67%; }
+  .width-3 { width: 25%; }
+  .width-4 { width: 33.33%; }
+  .width-5 { width: 41.67%; }
+  .width-6 { width: 50%; }
+  .width-7 { width: 58.33%; }
+  .width-8 { width: 66.67%; }
+  .width-9 { width: 75%; }
+  .width-10 { width: 83.33%; }
+  .width-11 { width: 91.67%; }
+  .width-12 { width: 100%; }
 }
 
