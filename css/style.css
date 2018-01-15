@@ -52,15 +52,42 @@ body {
   height: 100%;
 }
 
-p {
+img {
+  max-width: 100%;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* font colors, sizes, and alignment */
+
+h3 {
+  font-size: 45px;
+}
+
+p,
+a {
   font-size: 20px;
+  padding: 5px;
+}
+
+.about-me-font {
+  font-size: 30px;
+}
+
+p,
+a,
+.about-me-font {
   color: #DEDEDE; /* grey font */
 }
 
 a,
 .about-me-font {
-  font-size: 20px;
-  color: #DEDEDE; /* grey font */
   cursor: pointer;
   text-decoration: none;
   transition: 0.5s ease-in-out;
@@ -73,35 +100,24 @@ a:hover,
   text-decoration: none;
 }
 
-.center-img {
-  display: block;
-  margin: 0 auto;
-}
-
-img {
-  border-radius: 5px;
-}
-
-
-/* about me overlay */
-
-.about-me-font {
-  font-size: 30px;
-}
-
 .align-left {
   width: 50%;
   float: left;
+  padding-left: 10px;
 }
 
 .align-right {
   width: 50%;
   float: right;
   text-align: right;
+  padding-right: 10px;
 }
 
+
+/* about me overlay */
+
 .overlay-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -156,13 +172,11 @@ img {
 }
 
 .project-title {
-  font-size: 45px;
   padding: 30px 0px 15px 0px;
 }
 
 .square-link {
   position: absolute;
-  font-size: 50px;
   transform: translate(-50%, -80%);
   bottom: 10%;
   left: 50%;
@@ -171,6 +185,7 @@ img {
   background: rgba(132, 130, 143, 0.4); /* light purple */
   z-index: 1;
   text-align: center;
+  border-radius: 5px;
 }
 
 
@@ -187,5 +202,9 @@ img {
   .width-10 { width: 83.33%; }
   .width-11 { width: 91.67%; }
   .width-12 { width: 100%; }
+}
+
+@media only screen and (min-height: 850px) {
+  .overlay-container { position: fixed; }
 }
 
